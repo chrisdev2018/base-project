@@ -1,3 +1,31 @@
-<p>
-  mon nom : <b><a style="font-family:  Ubuntu; font-style: oblique; font-size: 2.2em">{{nom}}</a></b>
-</p>
+<div class="text_test">
+    <label>Nom</label>
+    <input type="text" class="form-control" placeholder="Votre nom" [(ngModel)]="nom" >
+    <br>
+    <label>Prenom</label>
+    <input type="text" class="form-control"  placeholder="votre prenom" [(ngModel)]="prenom" >
+
+    <br><br>
+
+    <button id="btn_1" class="btn btn-success" (click)="allumer()">Cliquez</button>
+  
+</div>
+
+
+<div class="list_etud">
+  <table>
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Notes</th>
+    </tr>
+    <tr *ngFor="let etud of etudiants">
+      <td>{{etud.mat }}</td>
+      <td>{{etud.nom | uppercase}}</td>
+      <td>{{etud.note}}</td>
+    </tr>
+  </table>
+  
+</div>
+
+<p style="font-family: cursive; font-size: 1.2em">{{lastDate | date: 'EEEE d MMMM y' | uppercase}}</p>

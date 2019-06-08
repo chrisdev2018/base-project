@@ -1,0 +1,37 @@
+.text_test{
+    width: 200px;
+    height: 250px;
+    background-color: fuchsia;
+    border: 1px solid;
+    float: right;
+    margin-top: 50px;
+    font-family: cursive;
+    margin-right: 50px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 4px 5px gold;
+}
+
+.list_etud{    
+    margin-left: 350px;
+    background: -webkit-gradient(blue, green);
+    
+}
+
+table{
+    border: rosybrown solid 1px;
+    
+    
+}
+
+th{
+    font-size: 1.2em;
+    background: black;
+    color: cornsilk;
+    font-family:  cursive;
+}
+
+td, th{
+    border: rosybrown solid 1px;
+    padding: 5px;
+}
+
